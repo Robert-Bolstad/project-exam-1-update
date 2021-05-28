@@ -1,0 +1,50 @@
+/* Reset styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+}
+body {
+  margin: 0px;
+}
+
+img {
+  width: 100%;
+}
+.backgoundImage {
+  background-image: url("../public/stars.gif");
+  animation: animatedBackground 200s linear;
+  overflow-x: hidden;
+  animation-iteration-count: infinite;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+// adding padding to get elemnts bellow nav component
+.container {
+  padding-top: 72px;
+}
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    animation: animatedBackground 100s linear;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    animation: animatedBackground 80s linear;
+  }
+}

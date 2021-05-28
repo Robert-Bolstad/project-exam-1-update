@@ -1,0 +1,123 @@
+.footer {
+  background-color: $primary-lite;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__logo-wrapper {
+    padding: $contentpadding;
+    padding-top: $contentpadding + $contentpadding/2;
+    width: 100%;
+    text-align: center;
+  }
+  &__logo {
+    font-family: $headline;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: $white;
+    font-style: italic;
+    text-align: center;
+    padding: 0px;
+  }
+  &__logo--yellow {
+    color: $secondary;
+  }
+  &__list {
+    list-style: none;
+    font-family: $headline;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+  }
+  &__item {
+    padding: $contentpadding/2;
+  }
+  &__link {
+    color: $white;
+    text-decoration: none;
+  }
+  &__link:hover {
+    color: $secondary;
+  }
+  &__link:active {
+    color: $secondary;
+  }
+  &__info {
+    width: 250px;
+    text-align: center;
+    font-family: $subheadline;
+    color: $white;
+    padding: $contentpadding/2;
+    width: 100%;
+  }
+  &__spacex-logo {
+    padding-left: 38px;
+    width: 200px;
+  }
+  &__wrapper {
+    padding: $contentpadding/2;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__description {
+    padding: $contentpadding/2;
+  }
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+  &__icon-wrapper {
+    width: 55px;
+    padding: $contentpadding/2;
+  }
+  &__bottom {
+    background-color: $primary;
+    padding: $contentpadding;
+    color: $white;
+    font-family: $subheadline;
+    font-size: smaller;
+    text-align: center;
+    width: 100%;
+  }
+  &__bottom-link {
+    color: $secondary;
+    text-decoration: none;
+  }
+}
+
+@media screen and (min-width: 620px) {
+  .footer {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: $contentpadding/2;
+    }
+    &__link {
+      white-space: nowrap;
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+      padding-bottom: $contentpadding;
+    }
+    &__info {
+      width: 380px;
+      text-align: left;
+    }
+    &__spacex-logo {
+      padding: 0px;
+    }
+    &__description {
+      padding: 0px;
+      padding-top: $contentpadding/2;
+    }
+  }
+}

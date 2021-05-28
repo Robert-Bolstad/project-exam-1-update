@@ -1,0 +1,28 @@
+$contentpadding: 1rem;
+$pagewidth: 1300px;
+
+//colours
+$black: #000000;
+$white: #ffffff;
+$primary: #162a37;
+$primary-lite: #1b3245;
+$secondary: #ffd700;
+$border: #719da8;
+
+//button
+$btn: rgb(51, 117, 62, 0.8);
+$btn-hover: rgb(22, 42, 55, 0.8);
+
+//fonts
+$headline: "Space Mono", monospace;
+$subheadline: "Open Sans", sans-serif;
+
+//text shadow
+$textshadow: 2px 2px 4px #719da8;
+
+//box shadow
+$boxshadow: 0 0px 1px 0 rgba(113, 157, 168, 0.2),
+  0 3px 10px 0 rgba(113, 157, 168, 0.19);
+
+//box background-color
+$box: rgb(22, 42, 55, 0.6);

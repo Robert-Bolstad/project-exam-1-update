@@ -1,0 +1,111 @@
+.timer {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: $contentpadding / 2;
+  &__img {
+    padding: $contentpadding/2;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__info {
+    font-family: $subheadline;
+    color: $white;
+    width: 100%;
+  }
+  &__heading {
+    font-family: $headline;
+    text-shadow: $textshadow;
+    font-size: 2em;
+    text-transform: uppercase;
+    padding: $contentpadding/2;
+  }
+  &__name {
+    font-size: 1.2em;
+    padding: $contentpadding/2;
+  }
+  &__countdown {
+    display: flex;
+    justify-content: center;
+  }
+  &__count {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: $contentpadding/2;
+  }
+  &__counter {
+    color: $secondary;
+  }
+  &__description {
+    padding: $contentpadding/2;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__btn {
+    padding: $contentpadding;
+    font-family: $headline;
+    display: block;
+    width: 200px;
+    text-decoration: none;
+    color: $white;
+    margin: $contentpadding/2;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $btn;
+    border: 2px solid $border;
+    padding: 10px;
+    box-shadow: $boxshadow;
+  }
+  &__btn:hover {
+    background-color: $btn-hover;
+    transition: 0.2s ease-in;
+  }
+
+  &__btn:focus {
+    background-color: $btn-hover;
+    transition: 0.2s ease-in;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .timer {
+    padding-top: $contentpadding * 3;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    &__img {
+      height: 311px;
+      width: auto;
+      margin: 0px;
+    }
+    &__info {
+      text-align: left;
+      width: auto;
+      padding-right: $contentpadding * 2;
+    }
+    &__countdown {
+      justify-content: left;
+      width: auto;
+    }
+    &__description {
+      margin: 0px;
+    }
+    &__btn {
+      margin: $contentpadding/2;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .timer {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+  }
+}

@@ -62,12 +62,7 @@
   }
   &__btn:hover {
     background-color: $btn-hover;
-    transition: 0.2s ease-in;
-  }
-
-  &__btn:focus {
-    background-color: $btn-hover;
-    transition: 0.2s ease-in;
+    transition: 200ms;
   }
 }
 

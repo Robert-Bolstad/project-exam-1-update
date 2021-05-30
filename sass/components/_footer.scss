@@ -22,6 +22,7 @@
     font-style: italic;
     text-align: center;
     padding: 0px;
+    letter-spacing: 1px;
   }
   &__logo--yellow {
     color: $secondary;
@@ -39,11 +40,12 @@
   &__link {
     color: $white;
     text-decoration: none;
+    transition: 200ms;
   }
   &__link:hover {
     color: $secondary;
   }
-  &__link:active {
+  &__link:focus {
     color: $secondary;
   }
   &__info {

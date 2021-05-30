@@ -1,0 +1,81 @@
+.missions {
+  padding: $contentpadding/2;
+  font-family: $headline;
+  &__heading {
+    text-shadow: $textshadow;
+    font-size: 2em;
+    padding: $contentpadding/2;
+    color: $white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__wrapper {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: $contentpadding + $contentpadding/2;
+  }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__card {
+    background-color: $box;
+    box-shadow: $boxshadow;
+    border: 2px solid $border;
+    padding: $contentpadding / 2;
+    margin: $contentpadding/2;
+    display: none;
+    &--show {
+      display: block;
+    }
+  }
+  &__subheading {
+    padding: $contentpadding/2;
+    font-size: 1.6em;
+    color: $secondary;
+    text-align: center;
+  }
+  &__description {
+    padding: $contentpadding/2;
+    color: $white;
+  }
+  &__btn-wrapper {
+    padding: $contentpadding/2;
+  }
+  &__btn {
+    padding: $contentpadding;
+    background-color: $box;
+    color: $secondary;
+    border: 2px solid $border;
+    box-shadow: $boxshadow;
+    font-family: $headline;
+    font-size: 1.2em;
+    cursor: pointer;
+    width: 100%;
+    transition: 200ms;
+  }
+  &__btn:hover {
+    background-color: $primary;
+  }
+
+  &__link {
+    margin: $contentpadding/2;
+    padding: $contentpadding / 2;
+    font-family: $headline;
+    text-decoration: none;
+    display: block;
+    color: $white;
+    background-color: $btn;
+    border: 2px solid $border;
+    box-shadow: $boxshadow;
+    font-size: 1em;
+    cursor: pointer;
+    width: fit-content;
+    transition: 200ms;
+  }
+  &__link:hover {
+    background-color: $btn-hover;
+  }
+}

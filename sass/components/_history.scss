@@ -1,0 +1,96 @@
+.history {
+  padding: $contentpadding/2;
+  font-family: $headline;
+  &__heading {
+    text-shadow: $textshadow;
+    font-size: 2em;
+    padding: $contentpadding/2;
+    color: $white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__wrapper {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__reverse-btn {
+    margin: $contentpadding/2;
+    padding: $contentpadding / 2;
+    font-family: $headline;
+    font-size: 1em;
+    border: 2px solid $border;
+    color: $secondary;
+    background-color: $box;
+    box-shadow: $boxshadow;
+    cursor: pointer;
+    transition: 200ms;
+  }
+  &__reverse-btn:hover {
+    background-color: $btn-hover;
+  }
+  &__reverse-btn:active {
+    background-color: $btn-hover;
+  }
+  &__cards {
+    padding: $contentpadding/2;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+  }
+  &__card {
+    background-color: $box;
+    box-shadow: $boxshadow;
+    border: 2px solid $border;
+    padding: $contentpadding / 2;
+    margin-bottom: $contentpadding;
+  }
+  &__subheading {
+    font-size: 1em;
+    color: $secondary;
+  }
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__btn {
+    margin: $contentpadding/2;
+    padding: $contentpadding / 2;
+    font-family: $headline;
+    text-decoration: none;
+    display: block;
+    color: $white;
+    background-color: $btn;
+    border: 2px solid $border;
+    box-shadow: $boxshadow;
+    font-size: 1em;
+    cursor: pointer;
+    width: fit-content;
+    transition: 200ms;
+  }
+  &__btn:hover {
+    background-color: $btn-hover;
+  }
+  &__btn:active {
+    background-color: $btn-hover;
+  }
+  &__description {
+    padding: $contentpadding/2;
+  }
+  &__date {
+    padding: $contentpadding/2;
+  }
+  &__subheading {
+    padding: $contentpadding/2;
+    font-size: 1.1em;
+  }
+  &__underline {
+    height: 2px;
+    background-color: $white;
+    margin: $contentpadding/2;
+  }
+  &__cards--reverse {
+    flex-direction: column-reverse;
+  }
+}

@@ -1,0 +1,78 @@
+.contact {
+  padding: $contentpadding/2;
+  font-family: $headline;
+
+  &__heading {
+    text-shadow: $textshadow;
+    font-size: 2em;
+    padding: $contentpadding/2;
+    color: $white;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  &__form {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__subheading {
+    color: $secondary;
+    padding: $contentpadding/2;
+  }
+  &__group {
+    padding: $contentpadding/2;
+  }
+  &__input {
+    width: 100%;
+    background-color: $box;
+    border: 2px solid $border;
+    padding: $contentpadding;
+    font-family: $subheadline;
+    font-size: 0.9em;
+    color: $white;
+    display: block;
+    box-shadow: $boxshadow;
+  }
+  &__textbox {
+    width: 100%;
+    resize: none;
+    height: 200px;
+    background-color: $box;
+    border: 2px solid $border;
+    padding: $contentpadding;
+    font-family: $subheadline;
+    display: block;
+    color: $white;
+    box-shadow: $boxshadow;
+    font-size: 0.9em;
+  }
+  &__submit {
+    padding: $contentpadding / 2;
+    border: 2px solid $border;
+    background-color: $btn;
+    font-family: $headline;
+    font-size: 1em;
+    color: $white;
+    transition: 200ms;
+    margin: $contentpadding/2;
+    box-shadow: $boxshadow;
+    cursor: pointer;
+  }
+  &__submit:hover {
+    background: $btn-hover;
+  }
+  &__error-message {
+    color: $white;
+    font-size: 0.9em;
+    font-family: $subheadline;
+    padding-top: $contentpadding/2;
+    &--asterisk {
+      color: $secondary;
+    }
+  }
+  &__success {
+    color: $white;
+    padding-left: $contentpadding/2;
+  }
+}

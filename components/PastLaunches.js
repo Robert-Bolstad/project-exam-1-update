@@ -1,5 +1,3 @@
-import React from "react";
-
 const PastLaunches = ({ data }) => {
   const handleClick = (e) => {
     const buttonElem = e.target;

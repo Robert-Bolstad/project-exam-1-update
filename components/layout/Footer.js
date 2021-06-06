@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
             <div className="footer__icon-wrapper">
               <a target="_blank" href="https://www.instagram.com/spacex/">
-                <img src="./instagram.svg" alt="instagram.svg" />
+                <img src="./insta.svg" alt="instagram.svg" />
               </a>
             </div>
             <div className="footer__icon-wrapper">

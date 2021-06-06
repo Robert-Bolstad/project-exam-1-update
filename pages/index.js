@@ -9,7 +9,10 @@ import axios from "axios";
 export default function index({ nextLaunch, upcomingLaunch }) {
   return (
     <Layout>
-      <Head title="Home" />
+      <Head
+        title="Home"
+        description="Welcome to LaunchPrep. This website is a microsite for SpaceX that provides information on SpaceX's upcoming rocket launches and more."
+      />
       <main className="backgoundImage">
         <Countdown data={nextLaunch} />
         <UpcomingList data={upcomingLaunch} />
@@ -18,7 +21,7 @@ export default function index({ nextLaunch, upcomingLaunch }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let nextLaunch;
   let upcomingLaunch;
 

@@ -2,11 +2,15 @@ import Head from "../components/layout/Head";
 import Layout from "../components/layout/Layout";
 import { useForm } from "react-hook-form";
 import { schema } from "../utils/schema";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 export default function contact() {
   const [success, setSuccess] = useState("");
+
+  useEffect(() => {
+    console.log("test");
+  }, []);
 
   const { register, handleSubmit, errors } = useForm({
     resolver: yupResolver(schema),
@@ -18,7 +22,10 @@ export default function contact() {
 
   return (
     <Layout>
-      <Head title="Contact" />
+      <Head
+        title="Contact"
+        description="Do you want to get in touch, or do you have any suggestions to make the website better? Then please leave a message in the contact form."
+      />
       <main className="backgoundImage contact">
         <h1 className="contact__heading">Contact</h1>
         <form onSubmit={handleSubmit(onSubmit)} className="contact__form">

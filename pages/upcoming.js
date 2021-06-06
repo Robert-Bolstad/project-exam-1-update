@@ -7,7 +7,10 @@ import axios from "axios";
 export default function upcoming({ upcoming }) {
   return (
     <Layout>
-      <Head title="Upcoming" />
+      <Head
+        title="Upcoming"
+        description="Get ready for the next SpaceX launch. Here you can find a list of upcoming launches by SpaceX. The list contains the launch date and more info on each launch."
+      />
       <main className="backgoundImage">
         <UpcomingLaunches data={upcoming} />
       </main>
@@ -15,7 +18,7 @@ export default function upcoming({ upcoming }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let upcoming;
 
   try {

@@ -7,7 +7,10 @@ import axios from "axios";
 export default function about({ info }) {
   return (
     <Layout>
-      <Head title="About" />
+      <Head
+        title="About"
+        description="Want to know about SpaceX? Here you can find details about SpaceX, plus links to even more information."
+      />
       <main className="backgoundImage about">
         <h1 className="about__heading">SpaceX</h1>
         <div className="about__container">
@@ -145,7 +148,7 @@ export default function about({ info }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let info;
 
   try {

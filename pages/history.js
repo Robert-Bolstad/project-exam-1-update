@@ -12,7 +12,10 @@ export default function history({ history }) {
 
   return (
     <Layout>
-      <Head title="History" />
+      <Head
+        title="History"
+        description="Here you can learn more about SpaceX's history. You can learn all about SpaceX's essential events and achievement throughout the years, plus links to more info."
+      />
       <main className="backgoundImage history">
         <h1 className="history__heading">Timeline Of Events</h1>
         <div className="history__wrapper">
@@ -76,7 +79,7 @@ export default function history({ history }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let history;
 
   try {

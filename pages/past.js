@@ -7,7 +7,10 @@ import axios from "axios";
 export default function past({ past }) {
   return (
     <Layout>
-      <Head title="Past" />
+      <Head
+        title="Past"
+        description="Want to know about SpaceX's past launches? Here you can find a list of all launches by SpaceX. The list contains information, videos and links to articles."
+      />
       <main className="backgoundImage">
         <PastLaunches data={past} />
       </main>
@@ -15,7 +18,7 @@ export default function past({ past }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let past;
 
   try {

@@ -12,7 +12,10 @@ export default function missions({ missions }) {
   };
   return (
     <Layout>
-      <Head title="Missions" />
+      <Head
+        title="Missions"
+        description="Want to know about SpaceX's missions? Here you can learn all about the missions SpaceX has completed throughout the years, plus links to even more information."
+      />
       <main className="backgoundImage missions">
         <h1 className="missions__heading">SpaceX's Missions</h1>
         <div className="missions__wrapper">
@@ -70,7 +73,7 @@ export default function missions({ missions }) {
   );
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   let missions;
 
   try {

@@ -52,7 +52,7 @@ img {
 .backgoundImage {
   background-image: url("../public/stars.gif");
   animation: animatedBackground 200s linear;
-  overflow-x: hidden;
+  overflow: hidden;
   animation-iteration-count: infinite;
   background-attachment: fixed;
   min-height: 100vh;

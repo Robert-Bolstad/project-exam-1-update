@@ -51,11 +51,12 @@ img {
 }
 .backgoundImage {
   background-image: url("../public/stars.gif");
-  animation: animatedBackground 200s linear;
+  animation: animatedBackground 180s linear;
   overflow: hidden;
   animation-iteration-count: infinite;
   background-attachment: fixed;
   min-height: 100vh;
+  transform: translateZ(0);
 }
 
 // adding padding to get elemnts bellow nav component
@@ -74,14 +75,14 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    animation: animatedBackground 100s linear;
+@media screen and (min-width: 500px) {
+  .backgoundImage {
+    animation: animatedBackground 120s linear;
   }
 }
 
-@media screen and (min-width: 1024px) {
-  body {
-    animation: animatedBackground 80s linear;
+@media screen and (min-width: 768px) {
+  .backgoundImage {
+    animation: animatedBackground 100s linear;
   }
 }

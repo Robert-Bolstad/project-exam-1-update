@@ -1,12 +1,13 @@
 import NextHead from "next/head";
 
-export default function Head({ title = "" }) {
+export default function Head({ title = "", description = "" }) {
   return (
     <NextHead>
       <title>
         {title}
         {title ? " | " : ""}Launch Prep
       </title>
+      <meta name="description" content={description}></meta>
       <link rel="icon" href="/favicon.svg" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
